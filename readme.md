@@ -1,27 +1,30 @@
-# Laravel PHP Framework
+# Laravel SMS (via Chikka SMS API)
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Send (receive coming soon) SMS messages through a web interface powered by the Chikka SMS API!
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+This is a forkable, ready-to-use SMS Messaging system written in Laravel 5.2.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## Features
 
-## Official Documentation
+* Send SMS to any Philippine carrier (Globe, Smart, Sun, TM)
+* Built-in contact saver
+* Per-account Credit Limiting
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## Coming Soon
 
-## Contributing
+* **Inbox** and **Sent Messages** folders
+* Purchase credits through Paypal (and other payment methods)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## Installation
 
-## Security Vulnerabilities
+Clone this repository and run `composer install` as you would on a normal Laravel-based system. Then, open your `.env` file and add these variables:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+    CHIKKA_CLIENT_ID=<YOUR API CLIENT ID HERE>
+    CHIKKA_CLIENT_SECRET=<YOUR API SECRET KEY HERE>
+    CHIKKA_CLIENT_SHORTCODE=<YOUR SHORTCODE HERE>
 
-## License
+Your **short code** is found on your Developer Dashboard menu (the number that starts with 29290). Make sure it has **no spaces** inside the `.env` file.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+## Licensing
+
+This system is released under the [MIT Open Source License](https://opensource.org/licenses/MIT).
