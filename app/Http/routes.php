@@ -26,6 +26,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
     Route::get('/', 'HomeController@index');
+    Route::get('/home', function() {
+        return redirect('/');
+    });
     Route::get('/cp', 'HomeController@cp');
     Route::post('/save', 'HomeController@save');
     Route::post('/send', 'HomeController@send');
