@@ -85,7 +85,7 @@ class HomeController extends Controller
         ]);
 
         // Check credits
-        if (Auth::user()['credits'] >= 0) {
+        if (Auth::user()['credits'] <= 0) {
             $request->session()->flash('error', 'You have no credits left.');
             return redirect('/cp');
         }
