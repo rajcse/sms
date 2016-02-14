@@ -17,7 +17,7 @@ This is a forkable, ready-to-use SMS Messaging system written in Laravel 5.2.
 
 ## Installation
 
-Clone this repository and run `composer install` as you would on a normal Laravel-based system. Then, open your `.env` file and add these variables:
+Clone this repository and run `composer install` as you would on a normal Laravel-based system. Run `php artisan migrate` to prepare your MySQL database (assuming you have your database access information already set in `.env`). Then, open your `.env` file and add these variables:
 
     CHIKKA_CLIENT_ID=<YOUR API CLIENT ID HERE>
     CHIKKA_CLIENT_SECRET=<YOUR API SECRET KEY HERE>
