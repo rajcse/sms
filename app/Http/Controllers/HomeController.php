@@ -37,7 +37,7 @@ class HomeController extends Controller
 
     public function cp()
     {
-        $contacts = Contact::all();
+        $contacts = Contact::where('owner_id', Auth::user()['id'])->get();
         return view('home', ['contacts' => $contacts]);
     }
 
