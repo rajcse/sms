@@ -4,7 +4,7 @@ Send (receive coming soon) SMS messages through a web interface powered by the C
 
 This is a forkable, ready-to-use SMS Messaging system written in Laravel 5.2.
 
-For a demo, click [here](http://sms.simplyliam.com/). Note that the demo is limited to **3 SMS Credits** upon registration.
+For a demo, click [here](https://sms.liamdemafelix.com/).
 
 ## Features
 
